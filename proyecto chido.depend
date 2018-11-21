@@ -1,0 +1,90 @@
+# depslib dependency file v1.0
+1542477246 source:c:\users\martin\desktop\proyecto chido\formulas para raices.c
+	"cabecera.h"
+	"prototipos.h"
+	"matriz.h"
+
+1542567619 c:\users\martin\desktop\proyecto chido\cabecera.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1542567619 c:\users\martin\desktop\proyecto chido\prototipos.h
+
+1542567619 c:\users\martin\desktop\proyecto chido\matriz.h
+
+1542573691 source:c:\users\martin\desktop\proyecto chido\func_integracion.c
+	"cabecera.h"
+	"prototipos.h"
+	"matriz.h"
+
+1542592649 source:c:\users\martin\desktop\proyecto chido\func_interpolacion.c
+	"cabecera.h"
+	"prototipos.h"
+	"matriz.h"
+
+1542517371 source:c:\users\martin\desktop\proyecto chido\func_raices_abiertos.c
+	"cabecera.h"
+	"prototipos.h"
+	"matriz.h"
+
+1542592649 source:c:\users\martin\desktop\proyecto chido\func_raices_cerrados.c
+	"cabecera.h"
+	"prototipos.h"
+	"matriz.h"
+
+1542567619 source:c:\users\martin\desktop\proyecto chido\func_regresion.c
+	"cabecera.h"
+	"prototipos.h"
+	"matriz.h"
+
+1542592649 source:c:\users\martin\desktop\proyecto chido\func_sis ecuaciones.c
+	"cabecera.h"
+	"prototipos.h"
+	"matriz.h"
+
+1542567619 source:c:\users\martin\desktop\proyecto chido\funciones.c
+	"cabecera.h"
+	"prototipos.h"
+	"matriz.h"
+
+1542567619 source:c:\users\martin\desktop\proyecto chido\io matriz.c
+	"cabecera.h"
+	"prototipos.h"
+	"matriz.h"
+
+1542573691 source:c:\users\martin\desktop\proyecto chido\main.c
+	"cabecera.h"
+	"prototipos.h"
+	"matriz.h"
+
+1542478780 source:c:\users\martin\desktop\proyecto chido\menus eleccion de metodo.c
+	"cabecera.h"
+	"prototipos.h"
+	"matriz.h"
+
+1542573691 source:c:\users\martin\desktop\proyecto chido\loc de raices.c
+	"cabecera.h"
+	"prototipos.h"
+	"matriz.h"
+
+1542651683 source:c:\users\martin\desktop\proyecto chido\sis de ecs.c
+	"cabecera.h"
+	"prototipos.h"
+	"matriz.h"
+
+1542592649 source:c:\users\martin\desktop\proyecto chido\integracion.c
+	"cabecera.h"
+	"prototipos.h"
+	"matriz.h"
+
+1542573690 source:c:\users\martin\desktop\proyecto chido\interpolacion.c
+	"cabecera.h"
+	"prototipos.h"
+	"matriz.h"
+
+1542516718 source:c:\users\martin\desktop\proyecto chido\regresion.c
+	"cabecera.h"
+	"prototipos.h"
+	"matriz.h"
+
