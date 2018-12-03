@@ -24,6 +24,12 @@
 #include "prototipos.h"
 #include "matriz.h"
 
+/** \brief regresion muestra el procedimiento posterior a elegir "regresion" en el menu principal
+ *         aqui se elige entre las distintas formas de encontrar una ecuacion. posterior
+ *         a elegir una opcion, se solicitan los parametros para realizar cada opcion
+ *
+ */
+
 void sis_de_ecs()
 {
     double **A, *B, *X;
@@ -97,20 +103,15 @@ void sis_de_ecs()
         else if(eleccion_metodo == 2)
         {
             Gauss_GM(A, B, tam, X, tolerancia, er);
-
-            printf("\n\n");
-            imprime_matriz_aumentada (A, B, tam );
         }
 
         else if(eleccion_metodo == 3)
         {
             Gseid(A,B,tam,X,imax,error,lambda);
-
-            printf("\n\n");
-            imprime_matriz_aumentada (A, X, tam );
         }
 
         imprime_vector(X,tam);
+
         destruye_vector(B);
         destruye_vector(X);
         destruye_matriz(A,tam,tam);

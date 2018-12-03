@@ -24,11 +24,17 @@
 #include "prototipos.h"
 #include "matriz.h"
 
+/** \brief regresion muestra el procedimiento posterior a elegir "regresion" en el menu principal
+ *         aqui se elige entre las distintas formas de encontrar una ecuacion. posterior
+ *         a elegir una opcion, se solicitan los parametros para realizar cada opcion
+ *
+ */
+
 void regresion()
 {
     double *x, *y;
     int tam, i, grado_polinomio, er, eleccion_metodo;
-    double a0, a1, suma_yx, r_cuadrado, tolerancia = 0;
+    double a0, a1, s_yx, r_cuadrado, tolerancia = 0;
 
     do
     {
@@ -50,6 +56,7 @@ void regresion()
     {
         system("cls");
     }
+
     else
     {
         system("cls");
@@ -89,6 +96,7 @@ void regresion()
         printf("\n datos conocidos\n"
                "       x               y\n"
                "_______________________________\n");
+
         for(i = 0 ; i < tam ; i++)
         {
             printf(" %11.6lf     %11.6lf \n", x[i], y[i]);
@@ -98,7 +106,7 @@ void regresion()
 
         if(eleccion_metodo == 1)
         {
-            regresion_lineal(x, y, tam, &a1, &a0, &suma_yx, &r_cuadrado);
+            regresion_lineal(x, y, tam, &a1, &a0, &s_yx, &r_cuadrado);
             printf(" la ecuacion es: \n"
                    " %11.6lf + %11.6lf x \n"
                    " \n se representa a los puntos en un %11.6lf % \n", a0, a1, r_cuadrado * 100.0);
@@ -110,7 +118,7 @@ void regresion()
             * A es una matriz utilizada para obtener los coeficientes de la
             * ecuacion que representa la regresion
             *
-            * Los coeficientes se guardaran en X
+            * Los coeficientes de la ecuacion se guardaran en X
             */
 
             double **A, *X;
@@ -118,8 +126,7 @@ void regresion()
             A = crear_matriz(grado_polinomio+1, grado_polinomio+1);
             X = crear_vector(grado_polinomio+1);
 
-            regresion_poli(x, y, tam, grado_polinomio, A, X, tolerancia, er);
-            porcentaje_regresion_p(x, y, X, &r_cuadrado, tam, grado_polinomio);
+            regresion_poli(x, y, tam, grado_polinomio, A, X, tolerancia, er); //aqui esta el error
 
             printf("\n\n la ecuacion es: \n");
 
@@ -128,6 +135,9 @@ void regresion()
                 printf("(%11.6lfx^%d) +", X[i], i);
             }
             printf("  0\n\n");
+
+
+            porcentaje_regresion_p(x, y, X, &r_cuadrado, tam, grado_polinomio);
 
             printf("la ecuacion representa los puntos en un %11.6lf \n\n", r_cuadrado);
 
